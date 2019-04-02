@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/status_view"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/contacts_list_status_away" />
+
+    <ImageView
+        android:id="@+id/avatar_view"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/contacts_list_avatar_female"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/avatar_view"
+        android:layout_toEndOf="@id/status_view"
+        android:orientation="vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:id="@+id/name_view"
+            style="@style/person_item"
+            tools:text="SOPHIE SCHROEDER" />
+
+        <TextView
+            android:id="@+id/status_message_view"
+            style="@style/person_item"
+            tools:text="In a meeting" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/avatar_view"
+        android:background="#64000000" />
+
+</RelativeLayout>

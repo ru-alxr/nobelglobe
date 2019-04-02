@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Roster</string>
+    <string name="error">Loading error</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Try again</string>
+    <string name="find_friends">Find friends</string>
+</resources>
